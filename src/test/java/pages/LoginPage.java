@@ -8,7 +8,7 @@ public class LoginPage {
 	
 	By userNameFld = By.xpath("//input[@type = 'text' and @placeholder='E mail']");
 	By passWordFld = By.xpath("//input[@type='password' and @placeholder ='Password']");
-	By lodinBtn = By.id("enterbtn");
+	By lodinBtun = By.id("enterbtn");
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -24,7 +24,7 @@ public class LoginPage {
 	}
 	
 	public void clickLogin() {
-		driver.findElement(lodinBtn).click();
+		driver.findElement(lodinBtun).click();
 	}
 	
 	
