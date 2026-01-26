@@ -5,35 +5,35 @@ import org.openqa.selenium.WebDriver;
 
 public class Register{
 	WebDriver driver;
-	
-	private By firstNameFld = By.xpath("//input[@type='text' and @placeholder='First Name']");
-	private By secondNameFld = By.xpath("//input[@type ='text' and @placeholder ='Last Name']");
-	private By addressFld = By.xpath("//div[textarea[@class = 'form-control ng-pristine ng-valid ng-touched' and @ng-model = 'Adress']]");
-	private By emailAddFld = By.xpath("//input[contains(@type,'email')]");
-	private By phoneNumFld = By.xpath("//input[contains(@type,'tel') and @ng-model = 'Phone']");
-	
-	private By genderRadio(String gender) {
-		return By.xpath(String.format("//input[@type='radio'and @value = '%s']",gender));
-	}
-	
-	private By hobbySelect(String hobby) {
-		return By.xpath(String.format("//input[@type = 'checkbox' and @value ='%s']", hobby));
-	}
-	
-	private By languagesFld(String language) {
-		return By.xpath("//ul[contains(@class,'ui-autocomplete')]//a[normalize-space()='" + language + "']");
-	}
-	
 	Register(WebDriver driver){
 		this.driver = driver;
 	}
 	
+	//Register page webelements xpaths
+	private By firstNameFld = By.xpath("//input[@type='text' and @placeholder='First Name']");
+	private By lastNameFld = By.xpath("//input[@type ='text' and @placeholder ='Last Name']");
+	private By addressFld = By.xpath("//div[textarea[@class = 'form-control ng-pristine ng-valid ng-touched' and @ng-model = 'Adress']]");
+	private By emailAddFld = By.xpath("//input[contains(@type,'email')]");
+	private By phoneNumFld = By.xpath("//input[contains(@type,'tel') and @ng-model = 'Phone']");
+	private By genderRadio(String gender) {
+		return By.xpath(String.format("//input[@type='radio'and @value = '%s']",gender));
+	}
+	private By hobbySelect(String hobby) {
+		return By.xpath(String.format("//input[@type = 'checkbox' and @value ='%s']", hobby));
+	}
+	private By languagesFld(String language) {
+		return By.xpath("//ul[contains(@class,'ui-autocomplete')]//a[normalize-space()='" + language + "']");
+	}
+	
+	
+	
+	//Register page fields
 	public void firstName(String firstName) {
 		driver.findElement(firstNameFld).sendKeys(firstName);
 	}
 	
-	public void secondName(String secondName) {
-		driver.findElement(secondNameFld).sendKeys(secondName);
+	public void lastName(String lastName) {
+		driver.findElement(lastNameFld).sendKeys(lastName);
 	}
 	
 	public void address(String addressVal) {

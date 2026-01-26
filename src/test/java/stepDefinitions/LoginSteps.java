@@ -6,10 +6,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.LoginPage;
+import pages.Register;
 
 public class LoginSteps {
 	WebDriver driver;
 	LoginPage loginPage;
+	Register registerPage;
 	
 	@Given("user is on login page")
 	public void user_in_loginPage() {
@@ -34,5 +36,7 @@ public class LoginSteps {
 	public void user_should_be_redirected_to_home_page() {
         System.out.println("Login successful");
         //driver.quit();
-    }
+    }	
+	
+	
 }
