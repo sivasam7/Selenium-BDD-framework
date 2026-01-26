@@ -61,5 +61,4 @@ public class Register{
 		driver.findElement(languagesFld(languageVal)).click();
 		
 	}
-	//Sofikutty
 }
