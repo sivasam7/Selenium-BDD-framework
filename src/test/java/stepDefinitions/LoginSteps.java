@@ -2,23 +2,24 @@ package stepDefinitions;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import DriverManager.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.LoginPage;
-import pages.Register;
 
 public class LoginSteps {
-	WebDriver driver;
+	WebDriver driver = DriverFactory.getDriver();
 	LoginPage loginPage;
-	Register registerPage;
 	
 	@Given("user is on login page")
 	public void user_in_loginPage() {
-		driver = new ChromeDriver();
-		driver.get("https://demo.automationtesting.in/SignIn.html");
+		driver.get("https://demo.automationtesting.in/Index.html");
 		driver.manage().window().maximize();
 		loginPage = new LoginPage(driver);
+	}
+	@Then("Enter emailID for sign in {string}")
+	public void enter_enterEmailIdForSignIn(String emailIdVal) {
+		loginPage.enterEmailIdForSignIn(emailIdVal );
 	}
 	@Then("Enter username {string}")
 	public void enter_userName(String username) {
@@ -31,6 +32,10 @@ public class LoginSteps {
 	@Then("user clicks login button")
 	public void click_login_butten() {
 		loginPage.clickLogin();
+	}
+	@Then("user clicks signIn next button")
+	public void click_signin_next_butten() {
+		loginPage.clickSignUp();
 	}
 	@Then("user should be redirected to home page")
 	public void user_should_be_redirected_to_home_page() {

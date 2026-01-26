@@ -1,29 +1,42 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Register{
 	WebDriver driver;
-	Register(WebDriver driver){
+	
+	public Register(WebDriver driver){
 		this.driver = driver;
 	}
+	
 	
 	//Register page webelements xpaths
 	private By firstNameFld = By.xpath("//input[@type='text' and @placeholder='First Name']");
 	private By lastNameFld = By.xpath("//input[@type ='text' and @placeholder ='Last Name']");
-	private By addressFld = By.xpath("//div[textarea[@class = 'form-control ng-pristine ng-valid ng-touched' and @ng-model = 'Adress']]");
+	private By addressFld = By.xpath("//textarea[@ng-model = 'Adress']");
 	private By emailAddFld = By.xpath("//input[contains(@type,'email')]");
 	private By phoneNumFld = By.xpath("//input[contains(@type,'tel') and @ng-model = 'Phone']");
 	private By genderRadio(String gender) {
 		return By.xpath(String.format("//input[@type='radio'and @value = '%s']",gender));
-	}
+	}	
 	private By hobbySelect(String hobby) {
 		return By.xpath(String.format("//input[@type = 'checkbox' and @value ='%s']", hobby));
 	}
 	private By languagesFld(String language) {
-		return By.xpath("//ul[contains(@class,'ui-autocomplete')]//a[normalize-space()='" + language + "']");
+		return By.xpath("//ul[contains(@class,'ui-autocomplete')]//a[normalize-space()='"+language+"']");
 	}
+	private By skillsSelectFld() {
+		return By.xpath("//select[@id='Skills']");
+	}
+	
+	
 	
 	
 	
@@ -54,11 +67,17 @@ public class Register{
 	
 	public void hobbies(String hobbyVal) {
 		driver.findElement(hobbySelect(hobbyVal)).click();
-
 	}
 	
 	public void languages(String languageVal) {
-		driver.findElement(languagesFld(languageVal)).click();
-		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		driver.findElement(By.xpath("//div[@id='msdd']")).click();
+		wait.until(ExpectedConditions.presenceOfElementLocated(languagesFld(languageVal)));
+		driver.findElement(languagesFld(languageVal)).click();	
+	}
+	public void skills(String skillsVal) {
+		WebElement skillDropDown = driver.findElement(skillsSelectFld());
+		Select select = new Select(skillDropDown);
+		select.selectByValue(skillsVal);
 	}
 }

@@ -2,12 +2,13 @@ package stepDefinitions;
 
 import org.openqa.selenium.WebDriver;
 
+import DriverManager.DriverFactory;
 import io.cucumber.java.en.Then;
 import pages.Register;
 
 public class RegisterSteps{
-	WebDriver driver;
-	Register registerpage;
+	WebDriver driver = DriverFactory.getDriver();
+	Register registerpage = new Register(driver);
 	
 	@Then("Enter first name {string}")
 	public void enter_firstName(String firstNameVal) {
@@ -46,6 +47,11 @@ public class RegisterSteps{
 	@Then("Select Language {string}")
 	public void select_Language(String languageVal) {
 		registerpage.languages(languageVal);
+	}
+	
+	@Then("Select Skill {string}")
+	public void select_Skill(String skillsVal) {
+		registerpage.skills(skillsVal);
 	}
 	
 }
