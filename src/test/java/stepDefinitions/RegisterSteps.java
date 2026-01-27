@@ -50,8 +50,38 @@ public class RegisterSteps{
 	}
 	
 	@Then("Select Skill {string}")
-	public void select_Skill(String skillsVal) {
+	public void select_skill(String skillsVal) {
 		registerpage.skills(skillsVal);
+	}
+	
+	@Then("Select country {string}")
+	public void select_country(String countryVal) {
+		registerpage.selectCountry(countryVal);
+	}
+	
+	@Then("Select year {string}")
+	public void select_year(String yearVal) {
+		registerpage.selectYear(yearVal);
+	}
+	
+	@Then("Select month {string}")
+	public void select_month(String monthVal) {
+		registerpage.selectMonth(monthVal);
+	}
+	
+	@Then("Select day {string}")
+	public void select_day(String dayVal) {
+		registerpage.selectDay(dayVal);
+	}
+	
+	@Then("Enter register page password {string}")
+	public void enter_password(String passVal) {
+		registerpage.passward(passVal);
+	}
+	
+	@Then("Enter confirm password {string}")
+	public void enter_confirm_password(String conPassVal) {
+		registerpage.confirmPassward(conPassVal);
 	}
 	
 }

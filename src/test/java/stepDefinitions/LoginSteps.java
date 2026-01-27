@@ -19,11 +19,11 @@ public class LoginSteps {
 	}
 	@Then("Enter emailID for sign in {string}")
 	public void enter_enterEmailIdForSignIn(String emailIdVal) {
-		loginPage.enterEmailIdForSignIn(emailIdVal );
+		loginPage.enterEmailIdForSignIn(emailIdVal);
 	}
 	@Then("Enter username {string}")
 	public void enter_userName(String username) {
-		loginPage.enterUserName(username );
+		loginPage.enterUserName(username);
 	}
 	@Then("Enter password {string}")
 	public void enter_password(String password) {
