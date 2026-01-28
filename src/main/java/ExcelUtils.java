@@ -20,15 +20,15 @@ public class ExcelUtils {
 			workbook = new XSSFWorkbook(file);
 			sheet = workbook.getSheet(sheetName);
 			if(sheet == null) {
-				System.out.println("❌ Sheet name " + sheetName + " not found in file:" + excelPath);
+				System.out.println("Sheet name " + sheetName + " not found in file:" + excelPath);
 			}
 			System.out.println("✔ Excel file loaded successfully");
 	        System.out.println("✔ Sheet selected: " + sheet.getSheetName());
 		}
 		catch(FileNotFoundException e) {
-			System.out.println("❌ Excel file not found at path: " + excelPath);
+			System.out.println("Excel file not found at path: " + excelPath);
 		}catch (IOException e) {
-	        System.out.println("❌ Error while reading Excel file: " + e.getMessage());
+	        System.out.println("Error while reading Excel file: " + e.getMessage());
 	    }
 		catch (Exception e) {
 			System.out.println(e.getMessage());
