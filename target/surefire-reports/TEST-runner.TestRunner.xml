@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="runner.TestRunner" time="11.166" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="runner.TestRunner" time="12.307" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18+0"/>
@@ -62,5 +62,91 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="Register functionality" name="User registers successfully" time="11.166"/>
+  <testcase classname="Register functionality" name="User registers successfully" time="12.307">
+    <error message="element click intercepted: Element &lt;a style=&quot;text-decoration:none&quot; class=&quot;ui-corner-all&quot;&gt;...&lt;/a&gt; is not clickable at point (571, 658). Other element would receive the click: &lt;iframe id=&quot;aswift_2&quot; name=&quot;aswift_2&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260128/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=1&quot; data-google-container-id=&quot;a!3&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CJCW9a33tJIDFQSeSwUdwAMIDQ&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=144.0.7559.97)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.6&apos;, java.version: &apos;18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd71146dbfae54158837d3d2038683, clickElement {id=f.8B69B7CAEB9C85F263C00F2A923BFEE3.d.39F6267727937624DE1477F5A14952C8.e.87}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /var/folders/w5/6jvxfqln1wg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49367}, goog:processID: 939, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49367/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (1dfd71146dbfae54158837d3d2038683)] -&gt; xpath: //ul[contains(@class,&apos;ui-autocomplete&apos;)]//a[normalize-space()=&apos;English&apos;]]
+Session ID: 1dfd71146dbfae54158837d3d2038683" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a style=&quot;text-decoration:none&quot; class=&quot;ui-corner-all&quot;&gt;...&lt;/a&gt; is not clickable at point (571, 658). Other element would receive the click: &lt;iframe id=&quot;aswift_2&quot; name=&quot;aswift_2&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260128/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=1&quot; data-google-container-id=&quot;a!3&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CJCW9a33tJIDFQSeSwUdwAMIDQ&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=144.0.7559.97)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.6&apos;, java.version: &apos;18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd71146dbfae54158837d3d2038683, clickElement {id=f.8B69B7CAEB9C85F263C00F2A923BFEE3.d.39F6267727937624DE1477F5A14952C8.e.87}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /var/folders/w5/6jvxfqln1wg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49367}, goog:processID: 939, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49367/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (1dfd71146dbfae54158837d3d2038683)] -&gt; xpath: //ul[contains(@class,&apos;ui-autocomplete&apos;)]//a[normalize-space()=&apos;English&apos;]]
+Session ID: 1dfd71146dbfae54158837d3d2038683
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.Register.languages(Register.java:86)
+	at stepDefinitions.RegisterSteps.select_Language(RegisterSteps.java:49)
+	at ✽.Select Language &quot;English&quot;(file:///Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/resources/features/Register.feature:16)
+</error>
+    <system-out>
+@Register
+Scenario: User registers successfully                            &amp;#27;[90m# src/test/resources/features/Register.feature:5&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32muser is on login page&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.LoginSteps.user_in_loginPage()&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mEnter emailID for sign in &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;selvamsivaprakasam7@gmail.com&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.LoginSteps.enter_enterEmailIdForSignIn(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser clicks signIn next button&amp;#27;[0m                            &amp;#27;[90m# stepDefinitions.LoginSteps.click_signin_next_butten()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mEnter first name &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Siva&quot;&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.RegisterSteps.enter_firstName(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mEnter last name &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Selvaraj&quot;&amp;#27;[0m                                 &amp;#27;[90m# stepDefinitions.RegisterSteps.enter_lastName(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mEnter Address &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;1-2/345, Mettur Dam, Salem&quot;&amp;#27;[0m                 &amp;#27;[90m# stepDefinitions.RegisterSteps.enter_Address(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mEnter email Address &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;selvamsivaprakasam7@gmail.com&quot;&amp;#27;[0m        &amp;#27;[90m# stepDefinitions.RegisterSteps.enter_emailAddress(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mEnter phone Number &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;9021234567&quot;&amp;#27;[0m                            &amp;#27;[90m# stepDefinitions.RegisterSteps.enter_phoneNum(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mSelect gender &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Male&quot;&amp;#27;[0m                                       &amp;#27;[90m# stepDefinitions.RegisterSteps.select_gender(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mSelect Hobby &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Cricket&quot;&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.RegisterSteps.select_hobby(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mSelect Language &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;English&quot;&amp;#27;[0m                                  &amp;#27;[90m# stepDefinitions.RegisterSteps.select_Language(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a style=&quot;text-decoration:none&quot; class=&quot;ui-corner-all&quot;&gt;...&lt;/a&gt; is not clickable at point (571, 658). Other element would receive the click: &lt;iframe id=&quot;aswift_2&quot; name=&quot;aswift_2&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260128/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=1&quot; data-google-container-id=&quot;a!3&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CJCW9a33tJIDFQSeSwUdwAMIDQ&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=144.0.7559.97)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6.6&apos;, java.version: &apos;18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd71146dbfae54158837d3d2038683, clickElement {id=f.8B69B7CAEB9C85F263C00F2A923BFEE3.d.39F6267727937624DE1477F5A14952C8.e.87}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.109 (6a8d5e49388..., userDataDir: /var/folders/w5/6jvxfqln1wg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49367}, goog:processID: 939, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49367/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (1dfd71146dbfae54158837d3d2038683)] -&gt; xpath: //ul[contains(@class,&apos;ui-autocomplete&apos;)]//a[normalize-space()=&apos;English&apos;]]
+Session ID: 1dfd71146dbfae54158837d3d2038683
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.Register.languages(Register.java:86)
+	at stepDefinitions.RegisterSteps.select_Language(RegisterSteps.java:49)
+	at ✽.Select Language &quot;English&quot;(file:///Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/resources/features/Register.feature:16)
+&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mSelect Skill &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Java&quot;&amp;#27;[0m                                        &amp;#27;[90m# stepDefinitions.RegisterSteps.select_skill(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mSelect country &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;india&quot;&amp;#27;[0m                                     &amp;#27;[90m# stepDefinitions.RegisterSteps.select_country(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mSelect year &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;2000&quot;&amp;#27;[0m                                         &amp;#27;[90m# stepDefinitions.RegisterSteps.select_year(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mSelect month &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;December&quot;&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.RegisterSteps.select_month(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mSelect day &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;31&quot;&amp;#27;[0m                                            &amp;#27;[90m# stepDefinitions.RegisterSteps.select_day(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mEnter register page password &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;password&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.RegisterSteps.enter_password(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mEnter confirm password &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;confirm pass&quot;&amp;#27;[0m                      &amp;#27;[90m# stepDefinitions.RegisterSteps.enter_confirm_password(java.lang.String)&amp;#27;[0m
+</system-out>
+    <system-err>Jan 31, 2026 9:54:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 144
+Jan 31, 2026 9:54:01 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 144.0.7559.97. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.29.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
+</system-err>
+  </testcase>
 </testsuite>
