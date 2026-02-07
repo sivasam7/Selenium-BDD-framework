@@ -24,3 +24,9 @@ Feature: Register functionality
    And Navigate to Alerts page
    And Click alert Button
    And Accept the alert and Get Text
+   And Navigate to alert with ok & cancel Button tab
+   And Click dismiss alert Button
+   And Handle the dismiss button
+   And Navigate to alert with text Button tab
+   And click text alert button
+   And Handle the text alert by sending "Siva Alert"
