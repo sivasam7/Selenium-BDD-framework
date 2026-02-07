@@ -1,7 +1,11 @@
 /Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/runner/TestRunner.java
 /Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/pages/Register.java
+/Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/stepDefinitions/AlertsSteps.java
 /Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/stepDefinitions/RegisterSteps.java
+/Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/Navigation/Navigations.java
+/Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/pages/AlertsPage.java
 /Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/pages/LoginPage.java
+/Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/stepDefinitions/NavigationSteps.java
 /Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/stepDefinitions/LoginSteps.java
 /Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/Common/CommonFunctions.java
 /Users/sivaprakasam/eclipse-workspace/Sceleniam/src/test/java/DriverManager/DriverFactory.java

@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.LoginPage;
 
-public class LoginSteps {
+public class LoginSteps{
 	WebDriver driver = DriverFactory.getDriver();
 	LoginPage loginPage;
 	

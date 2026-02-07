@@ -1,7 +1,11 @@
 runner/TestRunner.class
 stepDefinitions/RegisterSteps.class
-stepDefinitions/LoginSteps.class
+stepDefinitions/AlertsSteps.class
 DriverManager/DriverFactory.class
+stepDefinitions/NavigationSteps.class
+pages/AlertsPage.class
+stepDefinitions/LoginSteps.class
+Navigation/Navigations.class
 pages/LoginPage.class
 Common/CommonFunctions.class
 pages/Register.class
