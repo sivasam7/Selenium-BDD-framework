@@ -14,7 +14,6 @@ public class LoginSteps {
 	@Given("user is on login page")
 	public void user_in_loginPage() {
 		driver.get("https://demo.automationtesting.in/Index.html");
-		driver.manage().window().maximize();
 		loginPage = new LoginPage(driver);
 	}
 	@Then("Enter emailID for sign in {string}")

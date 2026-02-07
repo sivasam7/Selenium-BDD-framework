@@ -21,3 +21,6 @@ Feature: Register functionality
    And Select day "31"
    And Enter register page password "password"
    And Enter confirm password "confirm pass"
+   And Navigate to Alerts page
+   And Click alert Button
+   And Accept the alert and Get Text
